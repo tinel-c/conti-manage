@@ -3,6 +3,11 @@
 
 <head>
   <title>Conti management dashboard</title>
+  <!-- Aditional includes -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="./css/index.css" rel="stylesheet" type="text/css" />
+  <link id="index_theme" href="./css/index-jennifer.css" rel="stylesheet" type="text/css" />
+
   <!-- JUI basic includes -->
   <!-- Basic style components -->
   <link rel="stylesheet" href="/node_modules/jui/dist/ui.min.css" />
@@ -24,34 +29,39 @@
 
   <script src="/node_modules/jui-core/dist/core.min.js"></script>
   <script src="/node_modules/jui-chart/dist/chart.min.js"></script>
-  
-  <!-- Aditional inclUdes -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-  <link href="./css/index.css" rel="stylesheet" type="text/css" />
-  <link id="index_theme" href="./css/index-jennifer.css" rel="stylesheet" type="text/css" />
-  
-  
+
 </head>
 
 <body class="jui">
 
-  <div class="header">
-    <div class="logo">
-      <i class="icon-menu"></i>
+  <section>
+    <div class="navbar">
+      <div class="inline">
+        <div class="group">
+          <a class="btn small">Mini button</a>
+          <a class="btn small">Mini button</a>
+          <a class="btn small">Mini button</a>
+        </div>
+        <div class="combo">
+          <input type="text" class="input small" />
+          <ul style="display: none;">
+            <li><a id="g" href="#" value="1">MAIN</a></li>
+            <li><a href="#" value="2">Domain</a></li>
+            <li><a href="#" value="3">Domain2</a></li>
+          </ul>
+          <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+          <a class="btn small">Select...</a>
+        </div>
+      </div>
+
+      <div class="inline right">
+        <div class="group">
+          <a class="btn small disabled"><i class="icon-user pulse"></i></a>
+          <a class="btn small">Constantin Bogza</a>
+        </div>
+      </div>
     </div>
-    <div class="toolbar">
-      <span>Theme</span>
-      <span>
-      <select onchange="changeTheme(this.value)">
-        <option value="jennifer">Jennifer</option>
-        <option value="dark">Dark</option>
-      </select>
-    </span>
-      <span style="float:right">
-      Sample <i class="icon-check"></i>
-    </span>
-    </div>
-  </div>
+  </section>
 
   <div class="container">
     <div class="menu">
