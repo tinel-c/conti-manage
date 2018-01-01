@@ -1,15 +1,19 @@
 {
 	"name": "admintool",
 	"version": "1.0.0",
-	"title": "Administrator Tool",
-	"description": "Monitoring the status of your service, and a screen that shows the visitor's information.",
+	"title": "Team manager",
+	"description": "Helper for the administrative part of the team.",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
-		"admintool"
+		"managertool"
 	],
-	"author": "easylogic and yoha",
+	"author": "Constantin Bogza",
 	"license": "MIT",
 	"height" : "1700px"
+}
+
+"scripts": {
+  "test": "mocha"
 }

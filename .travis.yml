@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "8"
+  - "7"
+before_script:
+  - npm install -g gulp-cli
+install:
+  - npm install jui
+  - npm install jui-core
+  - npm install jui-grid
+  - npm install jui-chart
+  - npm install chai
+  - npm install mocha
+  - npm install require
+script: gulp
