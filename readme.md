@@ -55,3 +55,9 @@ The grunt.js command performs merge and minify on a .js file, and grunt-test per
 In addition, the grunt-class command converts a .less file into css and performs merge and minify. grunt js
 grunt css
 grunt test
+
+
+
+== git modifications ==
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git log --oneline --graph --all --decorate
