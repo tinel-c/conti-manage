@@ -14,6 +14,9 @@
   "height": "1700px",
   "dependencies": {
     "chai": "^4.1.2",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
     "jui": "^2.0.3",
     "jui-chart": "^2.0.4",
     "jui-core": "^2.0.4",

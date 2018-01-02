@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 
 <head>
-  <title>Conti management dashboard</title>
+  <title>Team management dashboard</title>
   <!-- Aditional includes -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
   <link href="./css/index.css" rel="stylesheet" type="text/css" />
@@ -12,6 +12,7 @@
   <!-- Basic style components -->
   <link rel="stylesheet" href="/node_modules/jui/dist/ui.min.css" />
   <link rel="stylesheet" href="/node_modules/jui/dist/ui-jennifer.min.css" />
+  <link rel="stylesheet" href="/node_modules/jquery-ui-dist/jquery-ui.min.css" />
 
   <!-- Grid style components -->
   <link rel="stylesheet" href="/node_modules/jui-grid/dist/grid.min.css" />
@@ -19,6 +20,7 @@
 
   <!-- Required script files -->
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
   <script src="/node_modules/jui-core/dist/core.min.js"></script>
 
   <!-- Basic script components -->
@@ -29,13 +31,21 @@
 
   <script src="/node_modules/jui-core/dist/core.min.js"></script>
   <script src="/node_modules/jui-chart/dist/chart.min.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+  } );
+  </script>
 
 </head>
 
 <body class="jui">
 
   <section>
-    <div class="navbar">
+    <div class="navbar fixed bottom">
       <div class="inline">
         <div class="group">
           <a class="btn small">Mini button</a>
@@ -62,7 +72,6 @@
       </div>
     </div>
   </section>
-
   <div class="container">
     <div class="menu">
       <div class="vmenu ">
@@ -73,6 +82,7 @@
         <a><i class="icon-document"></i> Document</a>
         <a><i class="icon-gear"></i> Management</a>
         <a><i class="icon-user"></i> User</a>
+        <span style="width: 100px;"> <div id="progressbar"></div></span>
       </div>
     </div>
     <div class="content">
