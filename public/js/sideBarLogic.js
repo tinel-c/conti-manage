@@ -1,6 +1,5 @@
-var activeSideBarItem = 0;
-
 function sideNavigation(elementNo) {
+    var activeSideBarItem = 0;
     $("div.vmenu a.active").removeClass("active");
     $("div.vmenu a").eq(elementNo).addClass("active");
     activeSideBarItem = elementNo;
