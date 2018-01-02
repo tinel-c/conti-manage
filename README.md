@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tinel-c/team-manager.svg?branch=master)](https://travis-ci.org/tinel-c/team-manager)
+
 # Used frameworks
 
 # How to use
