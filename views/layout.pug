@@ -1,7 +1,35 @@
-doctype html
+// layout.pug
+// Base layout for the site
+
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    block head
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
+      link(rel='stylesheet', href='/css/index.css')
+      link(rel='stylesheet', href='/css/index-jennifer.css', id="index_theme")
+      
+      link(rel='stylesheet', href='/jui/dist/ui.min.css')
+      link(rel='stylesheet', href='/jui/dist/ui-jennifer.min.css')
+      link(rel='stylesheet', href='/jquery-ui-dist/jquery-ui.min.css')
+      
+      link(rel='stylesheet', href='/jui-grid/dist/grid.min.css')
+      link(rel='stylesheet', href='/jui-grid/dist/grid-jennifer.min.css')
+    
+    
+      script(src='/jquery/dist/jquery.min.js')
+      script(src='/jquery-ui-dist/jquery-ui.min.js')
+      
+      script(src='/jui-core/dist/core.min.js')
+      script(src='/jui/dist/ui.min.js')
+      script(src='/jui-grid/dist/grid.min.js')
+      script(src='/jui-core/dist/core.min.js')
+      script(src='/jui-chart/dist/chart.min.js')
+  body(class="jui")
+      section
+        div(class="navbar fixed bottom")
+          div(class="inline")
+            div(class="group")
+              a(class="btn small") Mini button
+              a(class="btn small") Mini button
+              a(class="btn small") Mini button
+  block content
