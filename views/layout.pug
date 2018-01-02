@@ -4,16 +4,16 @@
 html
   head
     block head
-      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
-      link(rel='stylesheet', href='/css/index.css')
-      link(rel='stylesheet', href='/css/index-jennifer.css', id="index_theme")
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans',type="text/css")
+      link(rel='stylesheet', href='/css/index.css',type="text/css")
+      link(rel='stylesheet', href='/css/index-jennifer.css', id="index_theme",type="text/css")
       
-      link(rel='stylesheet', href='/jui/dist/ui.min.css')
-      link(rel='stylesheet', href='/jui/dist/ui-jennifer.min.css')
-      link(rel='stylesheet', href='/jquery-ui-dist/jquery-ui.min.css')
+      link(rel='stylesheet', href='/jui/dist/ui.min.css',type="text/css")
+      link(rel='stylesheet', href='/jui/dist/ui-jennifer.min.css',type="text/css")
+      link(rel='stylesheet', href='/jquery-ui-dist/jquery-ui.min.css',type="text/css")
       
-      link(rel='stylesheet', href='/jui-grid/dist/grid.min.css')
-      link(rel='stylesheet', href='/jui-grid/dist/grid-jennifer.min.css')
+      link(rel='stylesheet', href='/jui-grid/dist/grid.min.css',type="text/css")
+      link(rel='stylesheet', href='/jui-grid/dist/grid-jennifer.min.css',type="text/css")
     
     
       script(src='/jquery/dist/jquery.min.js')
@@ -32,4 +32,23 @@ html
               a(class="btn small") Mini button
               a(class="btn small") Mini button
               a(class="btn small") Mini button
+              
+            div(class="combo")
+              input(type="text",class="input small")
+              ul( style="display: none;")
+                li
+                  a(id="g",href="#",value="1") MAIN
+                li
+                  a(href="#",value="2") Domnain 1
+                li
+                  a(href="#",value="3") Domain 2
+              a(class="btn small toggle")
+                i(class="icon-arrow2")
+              a(class="btn small") Select...
+                
+          div(class="inline right")
+            div(class="group")
+              a(class="btn small disabled")
+                i(class="icon-user pulse")
+              a(class="btn small") Constantin Bogza
   block content
