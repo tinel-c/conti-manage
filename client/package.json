@@ -1,5 +1,5 @@
 {
-	"name": "admintool",
+	"name": "team-manager",
 	"version": "1.0.0",
 	"title": "Team manager",
 	"description": "Helper for the administrative part of the team.",
@@ -11,9 +11,9 @@
 	],
 	"author": "Constantin Bogza",
 	"license": "MIT",
-	"height" : "1700px"
-}
+	"height": "1700px",
+	"scripts": {
+		"test": "mocha"
+	}
 
-"scripts": {
-  "test": "mocha"
 }
