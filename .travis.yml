@@ -10,3 +10,9 @@ install:
   - npm install jui-chart
   - npm install chai
   - npm install mocha
+  - npm install express
+  - npm install body-parser
+  - npm install cookie-parser
+  - npm install multer
+  - npm install stylus
+  - npm install nib

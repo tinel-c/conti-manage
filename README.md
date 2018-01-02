@@ -2,43 +2,23 @@
 
 # Used frameworks
 
-# How to use
+JUI - http://uiplay.jui.io
+Express - https://expressjs.com/
+Mocha - https://mochajs.org/
+Chai - http://chaijs.com/
+Stylus - http://stylus-lang.com/
+Pug - https://pugjs.org/
 
-## Installing in command
 
-JUI library can be installed via the package manager like npm or bower.
-
-```
-npm install jui
-npm install jui-core
-npm install jui-grid
-npm install jui-chart
-npm install jquery-ui
-npm install chai
-npm install mocha
-```
-
-## To build the project
-
-To test and merge a .less file and a .js file contained in the package, run the command below.
-For reference, the Grunt module, which is a build tool, requires the installation of NodeJS. npm install grunt-cli -g
+# Start-up guides
 
 ```
-cd node_modules/jui
-npm install
-sudo npm install -g grunt-cli
-grunt
+set DEBUG=myapp:* & npm start
 ```
 
-The build & test command can be performed for each function as follows.
+# Node JS configuration 
 
-The grunt.js command performs merge and minify on a .js file, and grunt-test performs a component test.
-In addition, the grunt-class command converts a .less file into css and performs merge and minify. grunt js
-
-```
-grunt css
-grunt test
-```
+Check package.json file.
 
 # Git modifications
 

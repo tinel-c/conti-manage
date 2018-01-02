@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const app = require('../app');
+const app = require('../testFrameApp');
 
 
 describe('app.js test vector', function() {

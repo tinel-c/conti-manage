@@ -4,6 +4,7 @@
   "title": "Team manager",
   "description": "Helper for the administrative part of the team.",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "mocha"
   },
   "keywords": [
@@ -13,7 +14,10 @@
   "license": "MIT",
   "height": "1700px",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "chai": "^4.1.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-dist": "^1.12.1",
@@ -21,7 +25,14 @@
     "jui-chart": "^2.0.4",
     "jui-core": "^2.0.4",
     "jui-grid": "^2.0.2",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "multer": "^1.3.0",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5",
+    "debug": "~2.6.9",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "~2.4.5"
   },
   "repository": {
     "type": "git",
