@@ -4,7 +4,7 @@
   "title": "Team manager",
   "description": "Helper for the administrative part of the team.",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha"
   },
   "keywords": [
     "managertool"
