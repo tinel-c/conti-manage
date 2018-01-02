@@ -13,6 +13,8 @@ npm install jui
 npm install jui-core
 npm install jui-grid
 npm install jui-chart
+npm install chai
+npm install mocha
 ```
 
 ## To build the project
