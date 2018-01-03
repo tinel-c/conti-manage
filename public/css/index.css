@@ -32,9 +32,10 @@ html, body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
     height: 100%;
-    position: relative;
+    position: absolute;
+    padding-top: 35px;
 }
 
 .container:after {
@@ -232,4 +233,9 @@ body {
   height: 70px;
   font-size:3.5em;
   border-radius:8px;
+}
+
+.menu
+{
+    width: 100px;
 }

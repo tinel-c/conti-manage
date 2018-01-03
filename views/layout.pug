@@ -16,6 +16,10 @@ html
       link(rel='stylesheet', href='/jui-grid/dist/grid-jennifer.min.css',type="text/css")
     
     
+      link(rel='stylesheet', href='/jsgrid/jsgrid.min.css',type="text/css")
+      link(rel='stylesheet', href='/jsgrid/jsgrid-theme.css',type="text/css")
+
+
       script(src='/jquery/dist/jquery.min.js')
       script(src='/jquery-ui-dist/jquery-ui.min.js')
       
@@ -24,6 +28,8 @@ html
       script(src='/jui-grid/dist/grid.min.js')
       script(src='/jui-core/dist/core.min.js')
       script(src='/jui-chart/dist/chart.min.js')
+
+      script(src='/jsgrid/jsgrid.min.js')
       
       script(src='/js/sideBarLogic.js')
       
@@ -34,7 +40,7 @@ html
         | });
         |} );
   body(class="jui")
+    include layoutNavBar.pug
     div(class="container")
-      include layoutNavBar.pug
-      include layoutSideBar.pug
       block content
+      

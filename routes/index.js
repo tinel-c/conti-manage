@@ -18,4 +18,11 @@ router.get('/searching', function(req, res) {
 	res.send("Searching for: " + val);
 });
 
+router.get('/grid', function(req, res) {
+	var val = req.query.visible;
+	console.log(__filename + ": /searching for" + val);
+	res.send("Grid : " + val);
+});
+
+
 module.exports = router;
