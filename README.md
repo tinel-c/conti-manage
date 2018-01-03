@@ -2,25 +2,54 @@
 
 # Used frameworks
 
-JUI - http://uiplay.jui.io
-Express - https://expressjs.com/
-Mocha - https://mochajs.org/
-Chai - http://chaijs.com/
-Stylus - http://stylus-lang.com/
-Pug - https://pugjs.org/
+[JUI](http://uiplay.jui.io)
+[Express](https://expressjs.com/)
+[Mocha](https://mochajs.org/)
+[Chai](http://chaijs.com/)
+[Stylus](http://stylus-lang.com/)
+[Pug](https://pugjs.org/)
 
 
 # Start-up guides
 
+Default
 ```
 set DEBUG=myapp:* & npm start
+```
+
+For debug using supervisor
+```
+set DEBUG=myapp:* & node_modules\.\.bin\supervisor.cmd -- inspect .\bin\www
 ```
 
 # Node JS configuration 
 
 Check package.json file.
 
+# Debugging
+
+Connect chrome: 
+
+```
+chrome://inspect/
+```
+
+point to the adreess given
+```
+Starting child process with 'node --inspect .\bin\www'
+Watching directory 'D:\nodejs\team-manager' for changes.
+Press rs for restarting the process.
+Debugger listening on ws://127.0.0.1:9229/76d61db6-3bef-4a2b-894b-081519699bfc
+For help see https://nodejs.org/en/docs/inspector
+  myapp:server Listening on port 3000 +0ms
+Debugger attached.
+```
+
 # Git modifications
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git log --oneline --graph --all --decorate
+
+
+# Resources
+http://mherman.org/blog/2013/10/20/handling-ajax-calls-with-node-dot-js-and-express-scraping-craigslist/

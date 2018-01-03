@@ -16,3 +16,6 @@ install:
   - npm install multer
   - npm install stylus
   - npm install nib
+  - npm install method-override
+  - npm install express-session
+  - npm install supervisor
