@@ -20,6 +20,7 @@
     "debug": "~2.6.9",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "formidable": "^1.1.1",
     "html2pug": "^2.0.1",
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",

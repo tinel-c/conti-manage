@@ -19,7 +19,7 @@ set DEBUG=myapp:* & npm start
 
 For debug using supervisor
 ```
-set DEBUG=myapp:* & node_modules\.\.bin\supervisor.cmd -- inspect .\bin\www
+set DEBUG=myapp:* & node_modules\.\.bin\supervisor.cmd --inspect .\bin\www
 ```
 
 # Node JS configuration 
