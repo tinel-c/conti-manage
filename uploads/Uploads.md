@@ -1,0 +1,1 @@
+# Folder that contains the content of the uploads made through the application
