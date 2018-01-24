@@ -26,6 +26,22 @@ set DEBUG=myapp:* & node_modules\.\.bin\supervisor.cmd --inspect .\bin\www
 
 Check package.json file.
 
+# Testing
+```
+https://travis-ci.org/tinel-c/team-manager
+```
+
+# Deployment
+```
+https://shrouded-atoll-29735.herokuapp.com/
+```
+
+# Database
+
+```
+https://stitch.mongodb.com/
+```
+
 # Debugging
 
 Connect chrome: 
