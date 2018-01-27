@@ -4,10 +4,6 @@ node_js:
 before_install:
 - npm i -g npm@3.10.10
 install:
-- npm install jui
-- npm install jui-core
-- npm install jui-grid
-- npm install jui-chart
 - npm install chai
 - npm install mocha
 - npm install express
