@@ -16,3 +16,6 @@ install:
 - npm install express-session
 - npm install supervisor
 - npm install node-xlsx
+- npm install mongoose
+- npm install dotenv
+- npm install mongodb
