@@ -14,7 +14,7 @@ var sess = {
 };
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var users = require('./routes/user');
 var login = require('./routes/login');
 var upload = require('./routes/upload');
 
