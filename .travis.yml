@@ -19,3 +19,4 @@ install:
 - npm install mongoose
 - npm install dotenv
 - npm install mongodb
+- npm install async
