@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/tinel-c/team-manager.svg?branch=master)](https://travis-ci.org/tinel-c/team-manager)
+[![Documentation Status](https://readthedocs.org/projects/team-manager/badge/?version=latest)](http://team-manager.readthedocs.io/en/latest/?badge=latest)
+
 
 # Used frameworks
 

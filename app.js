@@ -14,7 +14,7 @@ var sess = {
 };
 
 var index = require('./routes/index');
-var users = require('./routes/user');
+var user = require('./routes/user');
 var login = require('./routes/login');
 var upload = require('./routes/upload');
 
@@ -43,7 +43,7 @@ app.use(session(sess))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/user', user);
 app.use('/login', login);
 app.use('/upload', upload);
 
