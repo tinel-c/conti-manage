@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-
+var mongooseHistory = require('mongoose-history');
 var Schema = mongoose.Schema;
 
 var UserSchema = new Schema(
@@ -11,6 +11,15 @@ var UserSchema = new Schema(
   }
 );
 
+
+// TODO implmenet user metadata inside the history
+var options = {
+  metadata: [
+    {key: 'user', value: 'toBeImplemented'}
+  ]
+};
+
+UserSchema.plugin(mongooseHistory,options);
 // Virtual for user name
 UserSchema
 .virtual('name')

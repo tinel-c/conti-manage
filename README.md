@@ -15,12 +15,12 @@
 # Start-up guides
 
 Default
-``` js
+```
 set DEBUG=myapp:* & npm start
 ```
 
 For debug using supervisor
-``` js 
+``` 
 set DEBUG=myapp:* & node_modules\.\.bin\supervisor.cmd --inspect .\bin\www
 ```
 
