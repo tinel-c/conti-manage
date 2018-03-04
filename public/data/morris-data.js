@@ -1,6 +1,6 @@
 $(function() {
 
-    Morris.Area({
+    window.mainChart = Morris.Area({
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
@@ -58,7 +58,8 @@ $(function() {
         labels: ['iPhone', 'iPad', 'iPod Touch'],
         pointSize: 2,
         hideHover: 'auto',
-        resize: true
+        resize: true,
+        redraw: true
     });
 
     Morris.Donut({
@@ -73,10 +74,11 @@ $(function() {
             label: "Mail-Order Sales",
             value: 20
         }],
-        resize: true
+        resize: true,
+        redraw: true
     });
 
-    Morris.Bar({
+    window.mainBar = Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
             y: '2006',
@@ -111,7 +113,8 @@ $(function() {
         ykeys: ['a', 'b'],
         labels: ['Series A', 'Series B'],
         hideHover: 'auto',
-        resize: true
+        resize: true,
+        redraw: true
     });
     
 });

@@ -163,9 +163,8 @@ html(lang='en')
                     span.pull-right.text-muted.small 4 minutes ago
               li.divider
               li
-                a.text-center(href='#')
-                  strong See All Alerts
-                  i.fa.fa-angle-right
+                a.text-center( onclick="showHideNotifications()")
+                  strong.notification-panel-control Hide notifications panel
             // /.dropdown-alerts 
           // /.dropdown 
           li.dropdown
@@ -348,7 +347,7 @@ html(lang='en')
                   .clearfix
         // /.row 
         .row
-          .col-lg-8
+          .col-lg-8.center-div-main-content
             .panel.panel-default
               .panel-heading
                 i.fa.fa-bar-chart-o.fa-fw
@@ -535,7 +534,7 @@ html(lang='en')
               // /.panel-body 
             // /.panel 
           // /.col-lg-8 
-          .col-lg-4
+          .col-lg-4.panel-div-notifications
             .panel.panel-default
               .panel-heading
                 i.fa.fa-bell.fa-fw

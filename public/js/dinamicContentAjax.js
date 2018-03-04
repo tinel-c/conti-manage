@@ -1,4 +1,5 @@
 var notificationData = "";
+var notificationVisible = true;
 function LoadNotifications() {
 	$(function() {
 		$.get("notification/allHtml", function(data) {
@@ -12,6 +13,24 @@ function LoadNotifications() {
 			}
 		});
 	});
+}
+
+function showHideNotifications() {
+	if(notificationVisible){
+		notificationVisible = false;
+		$(".panel-div-notifications").hide();
+		$(".notification-panel-control").text("Show notification panel");
+		$(".center-div-main-content").removeClass("col-lg-8");
+		window.mainChart.redraw();
+		window.mainBar.redraw();
+	} else {
+		notificationVisible = true;
+		$(".panel-div-notifications").show();
+		$(".notification-panel-control").text("Hide notification panel");
+		$(".center-div-main-content").addClass("col-lg-8");
+		window.mainChart.redraw();
+		window.mainBar.redraw();
+	}
 }
 
 $(document).ready(function() {
