@@ -8,18 +8,21 @@ var UserSchema = new Schema(
     family_name: {type: String, required: true, max: 100},
     uid: {type: String, required: true, max: 100},
     role: {type: String, required: true, max: 100},
+    changedBy: {type: String, required: false, max: 100},
   }
 );
 
 
-// TODO implmenet user metadata inside the history
-var options = {
-  metadata: [
-    {key: 'user', value: 'toBeImplemented'}
-  ]
-};
+// TODO add authenticated user in this session
+UserSchema.pre('save', function(next) {
+  this.changedBy = 'addAutenticatedUSer';
 
-UserSchema.plugin(mongooseHistory,options);
+  next();
+});
+
+// use mongoose-history to save changes to user_history
+UserSchema.plugin(mongooseHistory);
+
 // Virtual for user name
 UserSchema
 .virtual('name')
