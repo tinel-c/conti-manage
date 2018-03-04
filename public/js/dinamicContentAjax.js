@@ -23,6 +23,7 @@ function showHideNotifications() {
 		$(".center-div-main-content").removeClass("col-lg-8");
 		window.mainChart.redraw();
 		window.mainBar.redraw();
+		window.mainDonut.redraw();
 	} else {
 		notificationVisible = true;
 		$(".panel-div-notifications").show();
@@ -30,6 +31,7 @@ function showHideNotifications() {
 		$(".center-div-main-content").addClass("col-lg-8");
 		window.mainChart.redraw();
 		window.mainBar.redraw();
+		window.mainDonut.redraw();
 	}
 }
 

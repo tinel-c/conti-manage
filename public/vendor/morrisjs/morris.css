@@ -2,4 +2,6 @@
 .morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0}
 #morris-area-chart > svg { width: 100% !important; }
 #morris-bar-chart > svg { width: 100% !important; }
+#mmorris-donut-chart > svg { width: 100% !important; }
+
 
