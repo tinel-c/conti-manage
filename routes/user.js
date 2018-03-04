@@ -185,8 +185,11 @@ function deleteUser(req, res) {
 
 // *** delete ALL user *** //
 function deleteAllUsers(req, res) {
+	// function to be removed in the live application
 	console.log(">>>>>>>>>>>>> Delete all users!!!")
 	user.remove({}, callBackFunction);
+	console.log(">>>>>>>>>>>>> Delete all history!!!")
+	user.clearHistory(callBackFunction);
 	res.json({
 		'REMOVED': 'all'
 	});
