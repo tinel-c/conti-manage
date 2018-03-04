@@ -39,13 +39,15 @@ function userCreate(first_name, family_name, uid, role, cb) {
 		first_name: first_name,
 		family_name: family_name,
 		uid: uid,
-		role: role
+		role: role,
+		changedBy: "toBeReplaced"
 	}
 
 	var userInstance = new user(userdetail);
 
 	userInstance.save(function(err) {
 		if (err) {
+			console.log('Error: ' + err);
 			cb(err, null)
 			return
 		}

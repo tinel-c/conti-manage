@@ -7,10 +7,21 @@
 [JUI](http://uiplay.jui.io)
 [Express](https://expressjs.com/)
 [Mocha](https://mochajs.org/)
+Unitary testing for the application.
 [Chai](http://chaijs.com/)
+Unitary testing for the application.
 [Stylus](http://stylus-lang.com/)
 [Pug](https://pugjs.org/)
+Ease the writting of html code
 [Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications)
+Used to implement model controller view scheme.
+[Mongoose history](https://www.npmjs.com/package/mongoose-history)
+Used to save each modification to the database.
+[ActiveDirectory](https://github.com/gheeres/node-activedirectory)
+Add active directory logon to the application.
+.NET Framework 2.0 SDK is required for this item.
+
+-- not implemented yet.
 
 # Start-up guides
 
