@@ -38,8 +38,8 @@ UserSchema.pre('save', function(next) {
 	// TODO replace addAutenticatedUSer with the real system registered user
 	this.changedBy = 'addAutenticatedUser';
 	notificationData = {
-		notificationText: "Change/update to the user database: " + this.uid,
-		name: this.name,
+		notificationText: "Update the user: " + this.name,
+		name: this.changedBy,
 		date: Date.now(),
 		changedBy: this.changedBy
 	}

@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var session = require('express-session');
+var db = require('./db');
 var sess = {
   secret: 'keyboard cat',
   cookie: {},
@@ -17,6 +18,7 @@ var index = require('./routes/index');
 var user = require('./routes/user');
 var login = require('./routes/login');
 var upload = require('./routes/upload');
+var notification = require('./routes/notification');
 
 var app = express();
 
@@ -38,14 +40,20 @@ if (app.get('env') === 'production') {
   app.set('trust proxy', 1) // trust first proxy
   sess.cookie.secure = true // serve secure cookies
 }
- 
+
+//connect to the database
+db.connect();
+
 app.use(session(sess))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/user', user);
+app.use('/notification', notification);
 app.use('/login', login);
 app.use('/upload', upload);
+
+
 
 
 // catch 404 and forward to error handler

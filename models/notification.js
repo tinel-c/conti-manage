@@ -16,7 +16,7 @@ var NotificationSchema = new Schema({
   date: {
     type: Date,
     required: true,
-    default: Date.now
+    default: Date.now()
   },
   changedBy: {
     type: String,
@@ -25,6 +25,22 @@ var NotificationSchema = new Schema({
   }
 });
 
+
+function displayTime(timeInSeconds) {
+  if (timeInSeconds < 60) {
+    return "" + timeInSeconds + " second(s) ago.";
+  } else {
+    if (timeInSeconds < 3600) {
+      return "" + Math.floor(timeInSeconds / 60) + " minute(s) ago.";
+    } else {
+      if(timeInSeconds < (3600 * 24)) {
+        return "" + Math.floor(timeInSeconds / 3600 ) + " hour(s) ago.";
+      } else {
+        return "" + Math.floor(timeInSeconds / (3600 * 24)) + " day(s) ago."
+      }
+    }
+  }
+}
 
 // TODO add authenticated Notification in this session
 NotificationSchema.pre('save', function(next) {
@@ -39,12 +55,12 @@ NotificationSchema.plugin(mongooseHistory);
 NotificationSchema
   .virtual('getNotificationEntry')
   .get(function() {
-    return '<a class="list-group-item" href="#"><i class="fa fa-comment fa-fw"></i>' +
+    return '<div class="list-group-item"><i class="fa fa-comment fa-fw"></i>' +
       this.notificationText +
       '<span class="pull-right text-muted small"><em>' +
+      displayTime(Math.floor((Date.now() - this.date) / 1000)) + ' By: ' +
       this.name +
-      Math.floor((Date.now - date) / 60000) + 'minutes ago' +
-      '</em></span></a>';
+      '</em></span></div>';
   });
 
 // Virtual for Notification's URL
