@@ -15,6 +15,7 @@
   "height": "1700px",
   "dependencies": {
     "async": "^2.6.0",
+    "babel-plugin-root-import": "^5.1.0",
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
     "cookie-parser": "^1.4.3",
@@ -47,6 +48,8 @@
     "url": "https://github.com/tinel-c/team-manager.git"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "mongoose": "^5.0.1"
   }
 }

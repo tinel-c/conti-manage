@@ -17,6 +17,8 @@ var sess = {
 var index = require('./routes/index');
 var user = require('./routes/user');
 var login = require('./routes/login');
+var register = require('./routes/register');
+var forgot_password = require('./routes/forgot-password');
 var upload = require('./routes/upload');
 var notification = require('./routes/notification');
 
@@ -51,6 +53,8 @@ app.use('/', index);
 app.use('/user', user);
 app.use('/notification', notification);
 app.use('/login', login);
+app.use('/register', register);
+app.use('/forgot-password', forgot_password);
 app.use('/upload', upload);
 
 
