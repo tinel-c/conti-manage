@@ -1,0 +1,366 @@
+[33mcommit d2ea4b305ef42078c5bce183610747210d23f97e[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 11 13:07:51 2018 +0200
+
+    Add notifications back to the theme
+
+[33mcommit d8a10fafa9a5fbd01b7d175ef35c01ba6d12b929[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 11 12:44:37 2018 +0200
+
+    Upgrade to SB theme version 4
+
+[33mcommit 1f14467bfadda67031873bd08277ed20f3627518[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 11 12:39:44 2018 +0200
+
+    Base version before update to SB Admiv v4
+
+[33mcommit 34fc1aa6b4e406efd4f0384965fd72b3e298fd85[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 23:16:31 2018 +0200
+
+    Implement hide notification panel. Fix for morris donut to update correctly.
+
+[33mcommit 66508adaeb124f701252f6e91c5fdd8fd0a4794b[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 23:13:45 2018 +0200
+
+    Implement hide notification panel. Fix for morris chart to update correctly.
+
+[33mcommit 76c6badef46aba6dd612c12b705b332a7e2b553f[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 22:03:38 2018 +0200
+
+    Add notifications to the main page. Create refresh of notifications each 10s.
+
+[33mcommit f41ad35f34fd33a822356d4dcc46adfef22125a8[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 16:08:12 2018 +0200
+
+    Add notifications to the user database. Cap the number of entries in the notification database.
+
+[33mcommit 4f51917cd741e96e43d6d8b92ff6bc19bfde8f1e[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 11:48:23 2018 +0200
+
+    Implement delete history for the user schema.
+
+[33mcommit 84a05b98c4635449ab545e944edbf90018abfcf6[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 10:37:12 2018 +0200
+
+    Add changed by field to the user schema. This should track who did the changes inside the database.
+
+[33mcommit 3231e4b9dc87eddbe4d7cac39027950c1b2d4246[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Mar 4 00:06:30 2018 +0200
+
+    Add history logging to the user mongoose database
+
+[33mcommit 264d16dd33e28632eb851378d641996ce3dec710[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Feb 26 20:10:31 2018 +0200
+
+    Change the name for the documentation to docs_back
+
+[33mcommit b3b5b199051dc93f2733001f6ac2e9048cd9d4f7[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Feb 26 20:06:08 2018 +0200
+
+    Change the name for the documentation to docs
+
+[33mcommit 20d26423680210fc73f24a9b399c86d6ad97d98a[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Feb 25 18:13:06 2018 +0200
+
+    Add readthe docs badge and support.
+
+[33mcommit bd1240370a205c8e61e2866196844bd02d2a5c2a[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Feb 24 20:15:47 2018 +0200
+
+    Add user model and test for the user model. Remove database test. Add async to travis environment.
+
+[33mcommit fda6e108645d7b1c21dc182f55805c75cb3a31fd[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Feb 24 17:02:09 2018 +0200
+
+    Add user model and test for the user model. Remove database test
+
+[33mcommit d4b71be8e222c8f9b6dda72e7137e9ec33bf7d2f[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Feb 24 16:13:08 2018 +0200
+
+    Add user model and test for the user model
+
+[33mcommit e12764ee6dc1f4edbdbce1510cad45483bd6bdf5[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sun Jan 28 01:01:01 2018 +0200
+
+    Add models to the project. Create sample code in the project. Close #2
+
+[33mcommit f200f1e6115b6bcc6595b1371b2996e0fb27ef21[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Jan 27 19:02:13 2018 +0200
+
+    Improve database unitary tests. Print password in case of error.
+
+[33mcommit cabce56e3450f3647a5ac9df4295e6b91e6620b1[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Jan 27 18:53:53 2018 +0200
+
+    Improve database unitary tests.
+
+[33mcommit 62ba80c5f4786ad5dc9b4a7c9cf2699dff84557f[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Jan 27 17:58:44 2018 +0200
+
+    Add npm additional packages for travis for the database.
+
+[33mcommit 3f3e12455812a9b55a3d7094a9e22bfa543f068c[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Sat Jan 27 17:55:47 2018 +0200
+
+    Add initial connection to mongodb and unitary test for this connection
+
+[33mcommit c8d71c06e2d82369cf16dce397da5b9c35d4f85b[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 24 22:54:10 2018 +0200
+
+    Add folder uploads
+
+[33mcommit 548b5a00c4169fa4b5e33e662311cbfb25a891cf[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 24 22:51:29 2018 +0200
+
+    Delete Scan.pdf
+
+[33mcommit cddc43a9958df8649de140c64c283addcc5b3dc8[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 24 22:51:02 2018 +0200
+
+    Delete Detalii pacient pagina de printare.pdf
+
+[33mcommit c844ef68a11eef4ccc94e6b10245a7f60f712104[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 24 22:21:41 2018 +0200
+
+    Add mongo db to the application. Create the database and connect the router to the database
+
+[33mcommit fa23a637094b7c251a548054ebac268c6d329bc1[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 24 19:23:41 2018 +0200
+
+    Add upload cability to the aplication through /upload link.
+
+[33mcommit 3e3fb53ef8992247805286aed83b8733fa7b8502[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 21:23:40 2018 +0200
+
+    Remove jui from the project. Add bootstrap instead to the project.
+
+[33mcommit 49bbdc5a9cce263310d0a97b5e632096c639dcb5[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:42:59 2018 +0200
+
+    Remove deployment to heroku support for the application
+
+[33mcommit fd27635106740c374b869e10de9f7f8bed48ab87[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:36:41 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit bdb3bd1595d447b5032e37fc877c2512924a8425[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:13:35 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit 8edc46f08a50c04d6b1206dc36572855b7c44840[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:04:31 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit 04384c55fc9dd65bf2ba3699e3aae27c4eb50660[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:00:44 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit 5687bd126ce71eaccd0768c7fa04b749f907fb6f[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 03:00:31 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit da7a16ef8449fba6bfc2221b3bce38ce121dced5[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 02:53:13 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit ccfdbd88a0ebb919b49f677d8b14385b7c534720[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Thu Jan 4 02:50:08 2018 +0200
+
+    Add deployment to heroku support for the application
+
+[33mcommit 322c6818e3c0abce23070919c0fb98cf8c2907b9[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 3 22:37:39 2018 +0200
+
+    Add jsGrid to the project. Initial setup of jsGrid. Further cleaning has to be performed.
+
+[33mcommit d38d0ca2b59834e77c367b03381dbf229b57d212[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Wed Jan 3 17:02:17 2018 +0200
+
+    Add initial version of ajax handling inside the page and basic treatment of a search field.
+
+[33mcommit bc26b980c44ea5b5a688d92acfe94dac7d019b6a[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 23:54:35 2018 +0000
+
+    Minor modifications to the layout of the page and css.
+
+[33mcommit 0612e49709a0bb4b53d3f6d0c0ae8c7b5d26cb74[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 18:00:25 2018 +0000
+
+    Add navigation highlight to the interface. Write simple javascript function to present the selected item in the sideBar.
+
+[33mcommit a1099a728ad20e93c33c4390b557d30d9672826b[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 16:22:36 2018 +0000
+
+    Add the bottom bar of the application. Modify ui.min.css to fix borders
+
+[33mcommit d462a06ebdbedf05d5971d0269208d1e1d10e9cd[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 15:36:43 2018 +0000
+
+    Introduce base template for the site. Create public folder to serve the static content.
+
+[33mcommit 542ad29b1f00c5d2c70a3afd61515e74139eecd4[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 12:26:34 2018 +0000
+
+    Add express, pug and stylus to the application. Application now starts by running app.js file.
+
+[33mcommit 22000fb44d9e6991321b8016b6ef4d53eff30b7a[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 09:01:31 2018 +0000
+
+    Change the configuration of travis to match the development env.
+
+[33mcommit cde246c9ffdbfb201655d02fa65c279e301b9918[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 08:38:55 2018 +0000
+
+    Remove the trailing true from the parameter set of mocha
+
+[33mcommit 907da704d39e5932f238673b28de7de99812ee18[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 08:34:37 2018 +0000
+
+    Remove gulp from travis ci configuration
+
+[33mcommit 00b65e1af26d4b90975726bcc89eca5954132c98[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 01:32:05 2018 +0000
+
+    Add jquiry ui to the project and progress bar to the ui.
+
+[33mcommit f46471d4fb5724cc04f46b4a0dbe57144215b435[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 00:43:03 2018 +0000
+
+    Add to package.json dependencies and git repository. Remove trailining comma.
+
+[33mcommit f44a2ac698b9c71b18b47f570954718133a43fc4[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 00:41:26 2018 +0000
+
+    Add to package.json dependencies and git repository
+
+[33mcommit 9ddf7e895b5d2e0f86db98dbcc3219e22a1da351[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 00:33:28 2018 +0000
+
+    Add function unitary test sample code. Add the markdown for travis CI
+
+[33mcommit d285e1c9668a75127a2a986cf08110bf58116e87[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 00:09:07 2018 +0000
+
+    remove the problems that are not relevant when the test is failing
+
+[33mcommit d668155fcf29a893db7d08f7e0eea238eb662f63[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Tue Jan 2 00:06:12 2018 +0000
+
+    Correct the package.json file to correctly run test scripts.
+
+[33mcommit be9dc0eeb19d68995aa64d54cc5745522fe0b6cd[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 23:58:03 2018 +0000
+
+    Add first version of unitary testing using mocha and chai. Implement first sample code. Add support for https://travis-ci.org/
+
+[33mcommit f9b533aed51780b3aa3b043c15ac65ca5fb6a6a9[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 22:31:25 2018 +0000
+
+    Fix the indendation in the readme file again
+
+[33mcommit 1f8a829a5e1078f2181e4122fb76fd9a43a6e494[m
+Merge: d1b83ed 7854b10
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 22:29:44 2018 +0000
+
+    Merge branch 'master' of https://github.com/tinel-c/team-manager
+
+[33mcommit d1b83ed5cf3e306bf6908f1bd5d9078da4825673[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 22:23:52 2018 +0000
+
+    Fix the indendation in the readme file
+
+[33mcommit 3e197b59bd19e48e04e1ebd81076ebef93720827[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 22:18:57 2018 +0000
+
+    Beautify the read me file
+
+[33mcommit 7854b10ef3de91c0554b3a0366d8177cb71c39c3[m
+Author: Constantin Bogza <tinel.c@gmail.com>
+Date:   Mon Jan 1 22:18:57 2018 +0000
+
+    Beautify the read me file
+
+[33mcommit 8c69f32962a190b6931eba899ec292d742d06c29[m
+Author: Constantin Bogza <constantin.bogza@gmail.com>
+Date:   Mon Jan 1 20:32:42 2018 +0000
+
+    Create the top menu bar and adjust the layout.
+
+[33mcommit 16faee9792cee4bd36ebf898680fd4408aca2d54[m
+Author: Constantin Bogza <constantin.bogza@gmail.com>
+Date:   Mon Jan 1 20:12:41 2018 +0000
+
+    Add base dashboard template from https://github.com/juijs/www.jui.io/tree/master/gallery/admintool
+
+[33mcommit c5c92e0d3750f9285110466020d61d3b39e55048[m
+Author: Constantin Bogza <constantin.bogza@gmail.com>
+Date:   Mon Jan 1 18:07:21 2018 +0000
+
+    Modify the readme file to have the correct stuff in it.
+
+[33mcommit 3628024b25b4b6bfd3c77db2b1281f44a5112e60[m
+Author: Constantin Bogza <constantin.bogza@gmail.com>
+Date:   Mon Jan 1 18:06:40 2018 +0000
+
+    Modify the readme file to have the correct stuff in it.

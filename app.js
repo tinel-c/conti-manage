@@ -27,24 +27,24 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // allow PUT and DELETE in more than the allowed places
-app.use(methodOverride('X-HTTP-Method-Override'))
+app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(cookieParser());
-app.set('trust proxy', 1) // trust first proxy
+app.set('trust proxy', 1); // trust first proxy
 //enable secure cookies only in production
 if (app.get('env') === 'production') {
-  app.set('trust proxy', 1) // trust first proxy
-  sess.cookie.secure = true // serve secure cookies
+  app.set('trust proxy', 1); // trust first proxy
+  sess.cookie.secure = true; // serve secure cookies
 }
 
 //connect to the database
 db.connect();
 
-app.use(session(sess))
+app.use(session(sess));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
