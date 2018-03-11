@@ -1,5 +1,12 @@
 var notificationData = "";
 var notificationVisible = true;
+///
+/// Function to get the notifications from the notification model
+/// Uses the getNotificationEntry for all the entries inside the
+/// database.
+/// 
+/// This will fill the notification pannel inside the main page
+///
 function LoadNotifications() {
 	$(function() {
 		$.get("notification/allHtml", function(data) {
@@ -14,6 +21,10 @@ function LoadNotifications() {
 		});
 	});
 }
+
+///
+///TO DO: not used inside the new template
+///
 
 function showHideNotifications() {
 	if(notificationVisible){
@@ -35,6 +46,11 @@ function showHideNotifications() {
 	}
 }
 
+
+///
+///When the page has finished loading execute all the necessary 
+///functions 
+///
 $(document).ready(function() {
 	console.log("Loading of page ready!");
 	LoadNotifications();

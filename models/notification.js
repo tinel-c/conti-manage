@@ -52,6 +52,9 @@ NotificationSchema.pre('save', function(next) {
 NotificationSchema.plugin(mongooseHistory);
 
 // Virtual for Notification name
+// This function will grab all the entries and format them for the 
+// notification pannel inside the main site.
+// TO DO: get the image of each user from the database
 NotificationSchema
   .virtual('getNotificationEntry')
   .get(function() {
