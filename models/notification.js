@@ -36,7 +36,7 @@ function displayTime(timeInSeconds) {
       if(timeInSeconds < (3600 * 24)) {
         return "" + Math.floor(timeInSeconds / 3600 ) + " hour(s) ago.";
       } else {
-        return "" + Math.floor(timeInSeconds / (3600 * 24)) + " day(s) ago."
+        return "" + Math.floor(timeInSeconds / (3600 * 24)) + " day(s) ago.";
       }
     }
   }
@@ -55,12 +55,14 @@ NotificationSchema.plugin(mongooseHistory);
 NotificationSchema
   .virtual('getNotificationEntry')
   .get(function() {
-    return '<div class="list-group-item"><i class="fa fa-comment fa-fw"></i>' +
-      this.notificationText +
-      '<span class="pull-right text-muted small"><em>' +
-      displayTime(Math.floor((Date.now() - this.date) / 1000)) + ' By: ' +
-      this.name +
-      '</em></span></div>';
+    return '<a class="list-group-item list-group-item-action" href="#">' +
+           '<div class="media"><img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">' + 
+           '<div class="media-body">' +
+           '<strong>' + this.name + '</strong>: ' +
+           this.notificationText +     
+           '<div class="text-muted smaller">' +
+           displayTime(Math.floor((Date.now() - this.date) / 1000)) + 
+           '</div></div></div></a>';
   });
 
 // Virtual for Notification's URL
