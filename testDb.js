@@ -63,13 +63,13 @@ describe('Database Tests', function() {
 		this.timeout(20000);
 		db.connect();
 		done();
-		
+
 		//done();
 	});
 	beforeEach('create users', function(done) {
 		this.timeout(20000);
-    	createUsers(done);
-  	});
+		createUsers(done);
+	});
 
 	describe('Test Database', function() {
 		//Save object with 'name' value of 'Mike"
@@ -79,5 +79,9 @@ describe('Database Tests', function() {
 			assert.equal(arr.length, 0);
 			done();
 		});
+	});
+
+	after(function(done) {
+		db.close(done);
 	});
 });
