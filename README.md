@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/tinel-c/team-manager.svg?branch=master)](https://travis-ci.org/tinel-c/team-manager)
 [![Documentation Status](https://readthedocs.org/projects/team-manager/badge/?version=latest)](http://team-manager.readthedocs.io/en/latest/?badge=latest)
 
+#Set up sublime
+[Sublime packages](http://scottksmith.com/blog/2014/09/29/3-essential-sublime-text-plugins-for-node-and-javascript-developers/)
+
 
 # Used frameworks
 
