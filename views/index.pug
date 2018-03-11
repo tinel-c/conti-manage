@@ -537,7 +537,21 @@ html(lang='en')
                 i.fa.fa-pie-chart
                 |  Pie Chart Example
               .card-body
-                canvas#myPieChart(width='100%', height='100')
+                .row
+                  .col-sm-8.my-auto
+                    canvas#myPieChart(width='100%', height='100')
+                  .col-sm-4.text-center.my-auto
+                    .h4.mb-0.text-primary 12.21
+                    .small.text-muted Blue
+                    hr
+                    .h4.mb-0.text-danger 15.58
+                    .small.text-muted Red
+                    hr
+                    .h4.mb-0.text-warning 11.25
+                    .small.text-muted Yellow
+                    hr
+                    .h4.mb-0.text-success 8.32
+                    .small.text-muted Green
               .card-footer.small.text-muted
                 | Updated yesterday at 11:59 PM
           .col-lg-4
