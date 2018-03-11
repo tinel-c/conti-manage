@@ -1,889 +1,473 @@
 doctype html
 html(lang='en')
+
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width,initial-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title SB Admin 2 - Bootstrap Admin Theme
-    // Bootstrap Core CSS 
-    link(href='../vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
-    // MetisMenu CSS 
-    link(href='../vendor/metisMenu/metisMenu.min.css', rel='stylesheet')
-    // DataTables CSS 
-    link(href='../vendor/datatables-plugins/dataTables.bootstrap.css', rel='stylesheet')
-    // DataTables Responsive CSS 
-    link(href='../vendor/datatables-responsive/dataTables.responsive.css', rel='stylesheet')
-    // Custom CSS 
-    link(href='../dist/css/sb-admin-2.css', rel='stylesheet')
-    // Custom Fonts 
-    link(href='../vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
-    // WARNING: Respond.js doesn't work if you view the page via file:// 
-    //      [if lt IE 9]>
-              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-          <![endif]
-  body
-    #wrapper
-      // Navigation 
-      nav.navbar.navbar-default.navbar-static-top(role='navigation', style='margin-bottom: 0')
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='index.html') SB Admin v2.0
-        // /.navbar-header 
-        ul.nav.navbar-top-links.navbar-right
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              i.fa.fa-envelope.fa-fw
-              i.fa.fa-caret-down
-            ul.dropdown-menu.dropdown-messages
-              li
-                a(href='#')
-                  div
-                    strong John Smith
-                    span.pull-right.text-muted
-                      em Yesterday
-                  div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
-              li.divider
-              li
-                a(href='#')
-                  div
-                    strong John Smith
-                    span.pull-right.text-muted
-                      em Yesterday
-                  div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
-              li.divider
-              li
-                a(href='#')
-                  div
-                    strong John Smith
-                    span.pull-right.text-muted
-                      em Yesterday
-                  div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
-              li.divider
-              li
-                a.text-center(href='#')
-                  strong Read All Messages
-                  i.fa.fa-angle-right
-            // /.dropdown-messages 
-          // /.dropdown 
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              i.fa.fa-tasks.fa-fw
-              i.fa.fa-caret-down
-            ul.dropdown-menu.dropdown-tasks
-              li
-                a(href='#')
-                  div
-                    p
-                      strong Task 1
-                      span.pull-right.text-muted 40% Complete
-                    .progress.progress-striped.active
-                      .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
-                        span.sr-only 40% Complete (success)
-              li.divider
-              li
-                a(href='#')
-                  div
-                    p
-                      strong Task 2
-                      span.pull-right.text-muted 20% Complete
-                    .progress.progress-striped.active
-                      .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
-                        span.sr-only 20% Complete
-              li.divider
-              li
-                a(href='#')
-                  div
-                    p
-                      strong Task 3
-                      span.pull-right.text-muted 60% Complete
-                    .progress.progress-striped.active
-                      .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
-                        span.sr-only 60% Complete (warning)
-              li.divider
-              li
-                a(href='#')
-                  div
-                    p
-                      strong Task 4
-                      span.pull-right.text-muted 80% Complete
-                    .progress.progress-striped.active
-                      .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
-                        span.sr-only 80% Complete (danger)
-              li.divider
-              li
-                a.text-center(href='#')
-                  strong See All Tasks
-                  i.fa.fa-angle-right
-            // /.dropdown-tasks 
-          // /.dropdown 
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              i.fa.fa-bell.fa-fw
-              i.fa.fa-caret-down
-            ul.dropdown-menu.dropdown-alerts
-              li
-                a(href='#')
-                  div
-                    i.fa.fa-comment.fa-fw
-                    | New Comment
-                    span.pull-right.text-muted.small 4 minutes ago
-              li.divider
-              li
-                a(href='#')
-                  div
-                    i.fa.fa-twitter.fa-fw
-                    | 3 New Followers
-                    span.pull-right.text-muted.small 12 minutes ago
-              li.divider
-              li
-                a(href='#')
-                  div
-                    i.fa.fa-envelope.fa-fw
-                    | Message Sent
-                    span.pull-right.text-muted.small 4 minutes ago
-              li.divider
-              li
-                a(href='#')
-                  div
-                    i.fa.fa-tasks.fa-fw
-                    | New Task
-                    span.pull-right.text-muted.small 4 minutes ago
-              li.divider
-              li
-                a(href='#')
-                  div
-                    i.fa.fa-upload.fa-fw
-                    | Server Rebooted
-                    span.pull-right.text-muted.small 4 minutes ago
-              li.divider
-              li
-                a.text-center(href='#')
-                  strong See All Alerts
-                  i.fa.fa-angle-right
-            // /.dropdown-alerts 
-          // /.dropdown 
-          li.dropdown
-            a.dropdown-toggle(data-toggle='dropdown', href='#')
-              i.fa.fa-user.fa-fw
-              i.fa.fa-caret-down
-            ul.dropdown-menu.dropdown-user
-              li
-                a(href='#')
-                  i.fa.fa-user.fa-fw
-                  | User Profile
-              li
-                a(href='#')
-                  i.fa.fa-gear.fa-fw
-                  | Settings
-              li.divider
-              li
-                a(href='login.html')
-                  i.fa.fa-sign-out.fa-fw
-                  | Logout
-            // /.dropdown-user 
-          // /.dropdown 
-        // /.navbar-top-links 
-        .navbar-default.sidebar(role='navigation')
-          .sidebar-nav.navbar-collapse
-            ul.nav#side-menu
-              li.sidebar-search
-                .input-group.custom-search-form
-                  input.form-control(type='text', placeholder='Search...')
-                  span.input-group-btn
-                    button.btn.btn-default(type='button')
-                      i.fa.fa-search
-                // /input-group 
-              li
-                a(href='index.html')
-                  i.fa.fa-dashboard.fa-fw
-                  | Dashboard
-              li
-                a(href='#')
-                  i.fa.fa-bar-chart-o.fa-fw
-                  | Charts
-                  span.fa.arrow
-                ul.nav.nav-second-level
-                  li
-                    a(href='flot.html') Flot Charts
-                  li
-                    a(href='morris.html') Morris.js Charts
-                // /.nav-second-level 
-              li
-                a(href='tables.html')
-                  i.fa.fa-table.fa-fw
-                  | Tables
-              li
-                a(href='forms.html')
-                  i.fa.fa-edit.fa-fw
-                  | Forms
-              li
-                a(href='#')
-                  i.fa.fa-wrench.fa-fw
-                  | UI Elements
-                  span.fa.arrow
-                ul.nav.nav-second-level
-                  li
-                    a(href='panels-wells.html') Panels and Wells
-                  li
-                    a(href='buttons.html') Buttons
-                  li
-                    a(href='notifications.html') Notifications
-                  li
-                    a(href='typography.html') Typography
-                  li
-                    a(href='icons.html') Icons
-                  li
-                    a(href='grid.html') Grid
-                // /.nav-second-level 
-              li
-                a(href='#')
-                  i.fa.fa-sitemap.fa-fw
-                  | Multi-Level Dropdown
-                  span.fa.arrow
-                ul.nav.nav-second-level
-                  li
-                    a(href='#') Second Level Item
-                  li
-                    a(href='#') Second Level Item
-                  li
-                    a(href='#')
-                      | Third Level
-                      span.fa.arrow
-                    ul.nav.nav-third-level
-                      li
-                        a(href='#') Third Level Item
-                      li
-                        a(href='#') Third Level Item
-                      li
-                        a(href='#') Third Level Item
-                      li
-                        a(href='#') Third Level Item
-                    // /.nav-third-level 
-                // /.nav-second-level 
-              li
-                a(href='#')
-                  i.fa.fa-files-o.fa-fw
-                  | Sample Pages
-                  span.fa.arrow
-                ul.nav.nav-second-level
-                  li
-                    a(href='blank.html') Blank Page
-                  li
-                    a(href='login.html') Login Page
-                // /.nav-second-level 
-          // /.sidebar-collapse 
-        // /.navbar-static-side 
-      #page-wrapper
-        .row
-          .col-lg-12
-            h1.page-header Tables
-          // /.col-lg-12 
-        // /.row 
-        .row
-          .col-lg-12
-            .panel.panel-default
-              .panel-heading DataTables Advanced Tables
-              // /.panel-heading 
-              .panel-body
-                table.table.table-striped.table-bordered.table-hover#dataTables-example(width='100%')
-                  thead
-                    tr
-                      th Rendering engine
-                      th Browser
-                      th Platform(s)
-                      th Engine version
-                      th CSS grade
-                  tbody
-                    tr.odd.gradeX
-                      td Trident
-                      td Internet Explorer 4.0
-                      td Win 95+
-                      td.center 4
-                      td.center X
-                    tr.even.gradeC
-                      td Trident
-                      td Internet Explorer 5.0
-                      td Win 95+
-                      td.center 5
-                      td.center C
-                    tr.odd.gradeA
-                      td Trident
-                      td Internet Explorer 5.5
-                      td Win 95+
-                      td.center 5.5
-                      td.center A
-                    tr.even.gradeA
-                      td Trident
-                      td Internet Explorer 6
-                      td Win 98+
-                      td.center 6
-                      td.center A
-                    tr.odd.gradeA
-                      td Trident
-                      td Internet Explorer 7
-                      td Win XP SP2+
-                      td.center 7
-                      td.center A
-                    tr.even.gradeA
-                      td Trident
-                      td AOL browser (AOL desktop)
-                      td Win XP
-                      td.center 6
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Firefox 1.0
-                      td Win 98+ / OSX.2+
-                      td.center 1.7
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Firefox 1.5
-                      td Win 98+ / OSX.2+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Firefox 2.0
-                      td Win 98+ / OSX.2+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Firefox 3.0
-                      td Win 2k+ / OSX.3+
-                      td.center 1.9
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Camino 1.0
-                      td OSX.2+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Camino 1.5
-                      td OSX.3+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Netscape 7.2
-                      td Win 95+ / Mac OS 8.6-9.2
-                      td.center 1.7
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Netscape Browser 8
-                      td Win 98SE+
-                      td.center 1.7
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Netscape Navigator 9
-                      td Win 98+ / OSX.2+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.0
-                      td Win 95+ / OSX.1+
-                      td.center 1
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.1
-                      td Win 95+ / OSX.1+
-                      td.center 1.1
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.2
-                      td Win 95+ / OSX.1+
-                      td.center 1.2
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.3
-                      td Win 95+ / OSX.1+
-                      td.center 1.3
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.4
-                      td Win 95+ / OSX.1+
-                      td.center 1.4
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.5
-                      td Win 95+ / OSX.1+
-                      td.center 1.5
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.6
-                      td Win 95+ / OSX.1+
-                      td.center 1.6
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.7
-                      td Win 98+ / OSX.1+
-                      td.center 1.7
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Mozilla 1.8
-                      td Win 98+ / OSX.1+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Seamonkey 1.1
-                      td Win 98+ / OSX.2+
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Gecko
-                      td Epiphany 2.20
-                      td Gnome
-                      td.center 1.8
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td Safari 1.2
-                      td OSX.3
-                      td.center 125.5
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td Safari 1.3
-                      td OSX.3
-                      td.center 312.8
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td Safari 2.0
-                      td OSX.4+
-                      td.center 419.3
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td Safari 3.0
-                      td OSX.4+
-                      td.center 522.1
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td OmniWeb 5.5
-                      td OSX.4+
-                      td.center 420
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td iPod Touch / iPhone
-                      td iPod
-                      td.center 420.1
-                      td.center A
-                    tr.gradeA
-                      td Webkit
-                      td S60
-                      td S60
-                      td.center 413
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 7.0
-                      td Win 95+ / OSX.1+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 7.5
-                      td Win 95+ / OSX.2+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 8.0
-                      td Win 95+ / OSX.2+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 8.5
-                      td Win 95+ / OSX.2+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 9.0
-                      td Win 95+ / OSX.3+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 9.2
-                      td Win 88+ / OSX.3+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera 9.5
-                      td Win 88+ / OSX.3+
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Opera for Wii
-                      td Wii
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Nokia N800
-                      td N800
-                      td.center -
-                      td.center A
-                    tr.gradeA
-                      td Presto
-                      td Nintendo DS browser
-                      td Nintendo DS
-                      td.center 8.5
-                      td.center
-                        | C/A
-                        sup 1
-                    tr.gradeC
-                      td KHTML
-                      td Konqureror 3.1
-                      td KDE 3.1
-                      td.center 3.1
-                      td.center C
-                    tr.gradeA
-                      td KHTML
-                      td Konqureror 3.3
-                      td KDE 3.3
-                      td.center 3.3
-                      td.center A
-                    tr.gradeA
-                      td KHTML
-                      td Konqureror 3.5
-                      td KDE 3.5
-                      td.center 3.5
-                      td.center A
-                    tr.gradeX
-                      td Tasman
-                      td Internet Explorer 4.5
-                      td Mac OS 8-9
-                      td.center -
-                      td.center X
-                    tr.gradeC
-                      td Tasman
-                      td Internet Explorer 5.1
-                      td Mac OS 7.6-9
-                      td.center 1
-                      td.center C
-                    tr.gradeC
-                      td Tasman
-                      td Internet Explorer 5.2
-                      td Mac OS 8-X
-                      td.center 1
-                      td.center C
-                    tr.gradeA
-                      td Misc
-                      td NetFront 3.1
-                      td Embedded devices
-                      td.center -
-                      td.center C
-                    tr.gradeA
-                      td Misc
-                      td NetFront 3.4
-                      td Embedded devices
-                      td.center -
-                      td.center A
-                    tr.gradeX
-                      td Misc
-                      td Dillo 0.8
-                      td Embedded devices
-                      td.center -
-                      td.center X
-                    tr.gradeX
-                      td Misc
-                      td Links
-                      td Text only
-                      td.center -
-                      td.center X
-                    tr.gradeX
-                      td Misc
-                      td Lynx
-                      td Text only
-                      td.center -
-                      td.center X
-                    tr.gradeC
-                      td Misc
-                      td IE Mobile
-                      td Windows Mobile 6
-                      td.center -
-                      td.center C
-                    tr.gradeC
-                      td Misc
-                      td PSP browser
-                      td PSP
-                      td.center -
-                      td.center C
-                    tr.gradeU
-                      td Other browsers
-                      td All others
-                      td -
-                      td.center -
-                      td.center U
-                // /.table-responsive 
-                .well
-                  h4 DataTables Usage Information
-                  p
-                    | DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at
-                    a(target='_blank', href='https://datatables.net/') https://datatables.net/
-                    | .
-                  a.btn.btn-default.btn-lg.btn-block(target='_blank', href='https://datatables.net/') View DataTables Documentation
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-12 
-        // /.row 
-        .row
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Kitchen Sink
-              // /.panel-heading 
-              .panel-body
-                .table-responsive
-                  table.table.table-striped.table-bordered.table-hover
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Basic Table
-              // /.panel-heading 
-              .panel-body
-                .table-responsive
-                  table.table
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-        // /.row 
-        .row
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Striped Rows
-              // /.panel-heading 
-              .panel-body
-                .table-responsive
-                  table.table.table-striped
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Bordered Table
-              // /.panel-heading 
-              .panel-body
-                .table-responsive.table-bordered
-                  table.table
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-        // /.row 
-        .row
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Hover Rows
-              // /.panel-heading 
-              .panel-body
-                .table-responsive
-                  table.table.table-hover
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-          .col-lg-6
-            .panel.panel-default
-              .panel-heading Context Classes
-              // /.panel-heading 
-              .panel-body
-                .table-responsive
-                  table.table
-                    thead
-                      tr
-                        th #
-                        th First Name
-                        th Last Name
-                        th Username
-                    tbody
-                      tr.success
-                        td 1
-                        td Mark
-                        td Otto
-                        td @mdo
-                      tr.info
-                        td 2
-                        td Jacob
-                        td Thornton
-                        td @fat
-                      tr.warning
-                        td 3
-                        td Larry
-                        td the Bird
-                        td @twitter
-                      tr.danger
-                        td 4
-                        td John
-                        td Smith
-                        td @jsmith
-                // /.table-responsive 
-              // /.panel-body 
-            // /.panel 
-          // /.col-lg-6 
-        // /.row 
-      // /#page-wrapper 
-    // /#wrapper 
-    // jQuery 
-    script(src='../vendor/jquery/jquery.min.js')
-    // Bootstrap Core JavaScript 
-    script(src='../vendor/bootstrap/js/bootstrap.min.js')
-    // Metis Menu Plugin JavaScript 
-    script(src='../vendor/metisMenu/metisMenu.min.js')
-    // DataTables JavaScript 
-    script(src='../vendor/datatables/js/jquery.dataTables.min.js')
-    script(src='../vendor/datatables-plugins/dataTables.bootstrap.min.js')
-    script(src='../vendor/datatables-responsive/dataTables.responsive.js')
-    // Custom Theme JavaScript 
-    script(src='../dist/js/sb-admin-2.js')
-    // Page-Level Demo Scripts - Tables - Use for reference 
-    script $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
+
+    title SB Admin - Start Bootstrap Template
+
+    include includes/css/core.pug
+
+    // Page level plugin CSS
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Dashboard
+          li.breadcrumb-item.active Tables
+        // Example DataTables Card
+        .card.mb-3
+          .card-header
+            i.fa.fa-table
+            |  Data Table Example
+          .card-body
+            .table-responsive
+              table#dataTable.table.table-bordered(width='100%', cellspacing='0')
+                thead
+                  tr
+                    th Name
+                    th Position
+                    th Office
+                    th Age
+                    th Start date
+                    th Salary
+                tfoot
+                  tr
+                    th Name
+                    th Position
+                    th Office
+                    th Age
+                    th Start date
+                    th Salary
+                tbody
+                  tr
+                    td Tiger Nixon
+                    td System Architect
+                    td Edinburgh
+                    td 61
+                    td 2011/04/25
+                    td $320,800
+                  tr
+                    td Garrett Winters
+                    td Accountant
+                    td Tokyo
+                    td 63
+                    td 2011/07/25
+                    td $170,750
+                  tr
+                    td Ashton Cox
+                    td Junior Technical Author
+                    td San Francisco
+                    td 66
+                    td 2009/01/12
+                    td $86,000
+                  tr
+                    td Cedric Kelly
+                    td Senior Javascript Developer
+                    td Edinburgh
+                    td 22
+                    td 2012/03/29
+                    td $433,060
+                  tr
+                    td Airi Satou
+                    td Accountant
+                    td Tokyo
+                    td 33
+                    td 2008/11/28
+                    td $162,700
+                  tr
+                    td Brielle Williamson
+                    td Integration Specialist
+                    td New York
+                    td 61
+                    td 2012/12/02
+                    td $372,000
+                  tr
+                    td Herrod Chandler
+                    td Sales Assistant
+                    td San Francisco
+                    td 59
+                    td 2012/08/06
+                    td $137,500
+                  tr
+                    td Rhona Davidson
+                    td Integration Specialist
+                    td Tokyo
+                    td 55
+                    td 2010/10/14
+                    td $327,900
+                  tr
+                    td Colleen Hurst
+                    td Javascript Developer
+                    td San Francisco
+                    td 39
+                    td 2009/09/15
+                    td $205,500
+                  tr
+                    td Sonya Frost
+                    td Software Engineer
+                    td Edinburgh
+                    td 23
+                    td 2008/12/13
+                    td $103,600
+                  tr
+                    td Jena Gaines
+                    td Office Manager
+                    td London
+                    td 30
+                    td 2008/12/19
+                    td $90,560
+                  tr
+                    td Quinn Flynn
+                    td Support Lead
+                    td Edinburgh
+                    td 22
+                    td 2013/03/03
+                    td $342,000
+                  tr
+                    td Charde Marshall
+                    td Regional Director
+                    td San Francisco
+                    td 36
+                    td 2008/10/16
+                    td $470,600
+                  tr
+                    td Haley Kennedy
+                    td Senior Marketing Designer
+                    td London
+                    td 43
+                    td 2012/12/18
+                    td $313,500
+                  tr
+                    td Tatyana Fitzpatrick
+                    td Regional Director
+                    td London
+                    td 19
+                    td 2010/03/17
+                    td $385,750
+                  tr
+                    td Michael Silva
+                    td Marketing Designer
+                    td London
+                    td 66
+                    td 2012/11/27
+                    td $198,500
+                  tr
+                    td Paul Byrd
+                    td Chief Financial Officer (CFO)
+                    td New York
+                    td 64
+                    td 2010/06/09
+                    td $725,000
+                  tr
+                    td Gloria Little
+                    td Systems Administrator
+                    td New York
+                    td 59
+                    td 2009/04/10
+                    td $237,500
+                  tr
+                    td Bradley Greer
+                    td Software Engineer
+                    td London
+                    td 41
+                    td 2012/10/13
+                    td $132,000
+                  tr
+                    td Dai Rios
+                    td Personnel Lead
+                    td Edinburgh
+                    td 35
+                    td 2012/09/26
+                    td $217,500
+                  tr
+                    td Jenette Caldwell
+                    td Development Lead
+                    td New York
+                    td 30
+                    td 2011/09/03
+                    td $345,000
+                  tr
+                    td Yuri Berry
+                    td Chief Marketing Officer (CMO)
+                    td New York
+                    td 40
+                    td 2009/06/25
+                    td $675,000
+                  tr
+                    td Caesar Vance
+                    td Pre-Sales Support
+                    td New York
+                    td 21
+                    td 2011/12/12
+                    td $106,450
+                  tr
+                    td Doris Wilder
+                    td Sales Assistant
+                    td Sidney
+                    td 23
+                    td 2010/09/20
+                    td $85,600
+                  tr
+                    td Angelica Ramos
+                    td Chief Executive Officer (CEO)
+                    td London
+                    td 47
+                    td 2009/10/09
+                    td $1,200,000
+                  tr
+                    td Gavin Joyce
+                    td Developer
+                    td Edinburgh
+                    td 42
+                    td 2010/12/22
+                    td $92,575
+                  tr
+                    td Jennifer Chang
+                    td Regional Director
+                    td Singapore
+                    td 28
+                    td 2010/11/14
+                    td $357,650
+                  tr
+                    td Brenden Wagner
+                    td Software Engineer
+                    td San Francisco
+                    td 28
+                    td 2011/06/07
+                    td $206,850
+                  tr
+                    td Fiona Green
+                    td Chief Operating Officer (COO)
+                    td San Francisco
+                    td 48
+                    td 2010/03/11
+                    td $850,000
+                  tr
+                    td Shou Itou
+                    td Regional Marketing
+                    td Tokyo
+                    td 20
+                    td 2011/08/14
+                    td $163,000
+                  tr
+                    td Michelle House
+                    td Integration Specialist
+                    td Sidney
+                    td 37
+                    td 2011/06/02
+                    td $95,400
+                  tr
+                    td Suki Burks
+                    td Developer
+                    td London
+                    td 53
+                    td 2009/10/22
+                    td $114,500
+                  tr
+                    td Prescott Bartlett
+                    td Technical Author
+                    td London
+                    td 27
+                    td 2011/05/07
+                    td $145,000
+                  tr
+                    td Gavin Cortez
+                    td Team Leader
+                    td San Francisco
+                    td 22
+                    td 2008/10/26
+                    td $235,500
+                  tr
+                    td Martena Mccray
+                    td Post-Sales support
+                    td Edinburgh
+                    td 46
+                    td 2011/03/09
+                    td $324,050
+                  tr
+                    td Unity Butler
+                    td Marketing Designer
+                    td San Francisco
+                    td 47
+                    td 2009/12/09
+                    td $85,675
+                  tr
+                    td Howard Hatfield
+                    td Office Manager
+                    td San Francisco
+                    td 51
+                    td 2008/12/16
+                    td $164,500
+                  tr
+                    td Hope Fuentes
+                    td Secretary
+                    td San Francisco
+                    td 41
+                    td 2010/02/12
+                    td $109,850
+                  tr
+                    td Vivian Harrell
+                    td Financial Controller
+                    td San Francisco
+                    td 62
+                    td 2009/02/14
+                    td $452,500
+                  tr
+                    td Timothy Mooney
+                    td Office Manager
+                    td London
+                    td 37
+                    td 2008/12/11
+                    td $136,200
+                  tr
+                    td Jackson Bradshaw
+                    td Director
+                    td New York
+                    td 65
+                    td 2008/09/26
+                    td $645,750
+                  tr
+                    td Olivia Liang
+                    td Support Engineer
+                    td Singapore
+                    td 64
+                    td 2011/02/03
+                    td $234,500
+                  tr
+                    td Bruno Nash
+                    td Software Engineer
+                    td London
+                    td 38
+                    td 2011/05/03
+                    td $163,500
+                  tr
+                    td Sakura Yamamoto
+                    td Support Engineer
+                    td Tokyo
+                    td 37
+                    td 2009/08/19
+                    td $139,575
+                  tr
+                    td Thor Walton
+                    td Developer
+                    td New York
+                    td 61
+                    td 2013/08/11
+                    td $98,540
+                  tr
+                    td Finn Camacho
+                    td Support Engineer
+                    td San Francisco
+                    td 47
+                    td 2009/07/07
+                    td $87,500
+                  tr
+                    td Serge Baldwin
+                    td Data Coordinator
+                    td Singapore
+                    td 64
+                    td 2012/04/09
+                    td $138,575
+                  tr
+                    td Zenaida Frank
+                    td Software Engineer
+                    td New York
+                    td 63
+                    td 2010/01/04
+                    td $125,250
+                  tr
+                    td Zorita Serrano
+                    td Software Engineer
+                    td San Francisco
+                    td 56
+                    td 2012/06/01
+                    td $115,000
+                  tr
+                    td Jennifer Acosta
+                    td Junior Javascript Developer
+                    td Edinburgh
+                    td 43
+                    td 2013/02/01
+                    td $75,650
+                  tr
+                    td Cara Stevens
+                    td Sales Assistant
+                    td New York
+                    td 46
+                    td 2011/12/06
+                    td $145,600
+                  tr
+                    td Hermione Butler
+                    td Regional Director
+                    td London
+                    td 47
+                    td 2011/03/21
+                    td $356,250
+                  tr
+                    td Lael Greer
+                    td Systems Administrator
+                    td London
+                    td 21
+                    td 2009/02/27
+                    td $103,500
+                  tr
+                    td Jonas Alexander
+                    td Developer
+                    td San Francisco
+                    td 30
+                    td 2010/07/14
+                    td $86,500
+                  tr
+                    td Shad Decker
+                    td Regional Director
+                    td Edinburgh
+                    td 51
+                    td 2008/11/13
+                    td $183,000
+                  tr
+                    td Michael Bruce
+                    td Javascript Developer
+                    td Singapore
+                    td 29
+                    td 2011/06/27
+                    td $183,000
+                  tr
+                    td Donna Snider
+                    td Customer Support
+                    td New York
+                    td 27
+                    td 2011/01/25
+                    td $112,000
+          .card-footer.small.text-muted
+            | Updated yesterday at 11:59 PM
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      // Page level plugin JavaScript
+      script(src='vendor/datatables/jquery.dataTables.js')
+      script(src='vendor/datatables/dataTables.bootstrap4.js')
+
+      include includes/js/custom.pug
+
+      // Custom scripts for this page
+      script(src='js/sb-admin-datatables.min.js')
