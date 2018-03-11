@@ -1,11 +1,9 @@
 var db = require('../db');
-const assert = require('chai').assert;
-var async = require('async')
-var user = require('../models/user')
+var assert = require('chai').assert;
+var async = require('async');
+var user = require('../models/user');
 
-db.connect();
-
-var users = []
+var users = [];
 
 
 function userCreate(first_name, family_name, uid, role, cb) {
@@ -14,18 +12,18 @@ function userCreate(first_name, family_name, uid, role, cb) {
 		family_name: family_name,
 		uid: uid,
 		role: role
-	}
+	};
 
 	var userInstance = new user(userdetail);
 
 	userInstance.save(function(err) {
 		if (err) {
-			cb(err, null)
-			return
+			cb(err, null);
+			return;
 		}
 		console.log('New userInstance: ' + userInstance);
-		users.push(userInstance)
-		cb(null, userInstance)
+		users.push(userInstance);
+		cb(null, userInstance);
 	});
 }
 
@@ -52,10 +50,33 @@ function createUsers(cb) {
 }
 
 
-function executeDone(){
+function executeDone() {
 	console.log("Execution done");
 }
 
 
-createUsers(executeDone);	
 
+describe('Database Tests', function() {
+	//Before starting the test, create a sandboxed database connection
+	//Once a connection is established invoke done()
+	before('connect', function(done) {
+		this.timeout(20000);
+		db.connect(done);
+		
+		//done();
+	});
+	beforeEach('create users', function(done) {
+		this.timeout(20000);
+    	createUsers(done);
+  	});
+
+	describe('Test Database', function() {
+		//Save object with 'name' value of 'Mike"
+		this.timeout(20000);
+		it('Create new entries to the database', function(done) {
+			var arr = [];
+			assert.equal(arr.length, 0);
+			done();
+		});
+	});
+});
