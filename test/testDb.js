@@ -61,7 +61,8 @@ describe('Database Tests', function() {
 	//Once a connection is established invoke done()
 	before('connect', function(done) {
 		this.timeout(20000);
-		db.connect(done);
+		db.connect();
+		done();
 		
 		//done();
 	});
