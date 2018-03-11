@@ -18,7 +18,6 @@ var db = mongoose.connection;
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', function() {
       console.log('We are connected to test database!');
-      done();
     });
 };
 
