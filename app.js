@@ -21,6 +21,7 @@ var register = require('./routes/register');
 var forgot_password = require('./routes/forgot-password');
 var upload = require('./routes/upload');
 var notification = require('./routes/notification');
+var charts = require('./routes/charts');
 
 var app = express();
 
@@ -56,6 +57,7 @@ app.use('/login', login);
 app.use('/register', register);
 app.use('/forgot-password', forgot_password);
 app.use('/upload', upload);
+app.use('/charts', charts);
 
 
 
